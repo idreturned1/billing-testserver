@@ -4,7 +4,7 @@ const util = require('util');
 const fs = require('fs');
 
 const getUploadFileMiddleware = (config) => {
-  const resourcePath = '../../public/assets/';
+  const resourcePath = './public/assets/';
   const storage = multer.diskStorage({
     destination: (req, file, cb) => {
       const dirPath = path.join(__dirname, resourcePath, config.dirName, '/');
