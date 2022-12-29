@@ -1,0 +1,1 @@
+Contains public assets
